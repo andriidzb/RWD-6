@@ -1,0 +1,139 @@
+.hid {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.space {
+	margin-bottom: 20px;
+}
+
+.red {
+	height: 100px;
+	background: #ff0000;
+}
+
+.yellow {
+	height: 300px;
+	background: #ffff00;
+	display: flex;
+	align-items: center;
+	font-size: 40px;
+	justify-content: center;
+}
+
+.orange {
+	height: 300px;
+	background: #ffa500;
+}
+
+.green {
+	height: 300px;
+	background: #008000;
+}
+
+.pink {
+	height: 300px;
+	background: #ffc0cb;
+}
+
+.blue {
+	height: 300px;
+	background: #0000ff;
+}
+
+.desk {
+	display: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.tablet {
+		display: flex;
+		flex-direction: row;
+		order: 1;
+	}
+	.orange {
+		flex-grow: 2;
+		margin-right: 20px;
+	}
+	.green {
+		flex-grow: 1;
+	}
+
+	.yellow {
+		order: 2;
+	}
+
+	.pink {
+		order: 3;
+		height: 500px;
+	}
+	.blue {
+		order: 4;
+		height: 250px;
+	}
+}
+
+@media (min-width: 992px) {
+	.hid {
+		display: none;
+	}
+
+	.desk {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.red1 {
+	height: 100px;
+	background: #ff0000;
+	}
+	.orange1 {
+		height: 300px;
+		background: #ffa500;
+	}
+	.bot {
+		display: flex;
+		flex-direction: row;
+	}
+	.left {
+		display: inline-flex;
+		flex-wrap: wrap;
+		width: 80%;
+	}
+	.yellow1 {
+		margin-top: 0;
+		height: 300px;
+		background: #ffff00;
+		display: flex;
+		align-items: center;
+		font-size: 40px;
+		justify-content: center;
+		width: 48%;
+		margin-right: 20px;
+	}
+	.y2 {
+		margin-right: 0px;
+	}
+	.right {
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+	}
+	.green1 {
+		height: 450px;
+		background: #008000;
+	}
+	.blue1 {
+		height: 350px;
+		background: #0000ff;
+	}
+	.pink1 {
+		height: 500px;
+		background: #ffc0cb;
+		width: 98%;
+		margin-right: 20px;
+
+	}
+}
